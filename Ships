@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+Console.WriteLine("Enter a Star Wars ship's name:");
+string shipName = Console.ReadLine();
+
+switch (shipName.Trim().ToLower())
+{
+    case "millennium falcon":
+        Console.WriteLine("The Millennium Falcon is a Corellian YT-1300 light freighter.");
+        break;
+    case "x-wing":
+    case "y-wing":
+        Console.WriteLine($"{shipName} is a Rebel starfighter.");
+        break;
+    case "tie fighter":
+    case "tie bomber":
+        Console.WriteLine($"{shipName} is an Imperial starfighter.");
+        break;
+    case "star destroyer":
+        Console.WriteLine("The Star Destroyer is a class of capital ships used by the Galactic Empire.");
+        break;
+    default:
+        Console.WriteLine("Unknown ship.");
+        break;
+}
+
+Console.WriteLine(); 
