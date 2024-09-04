@@ -10,7 +10,7 @@ string shipName = Console.ReadLine();
 switch (shipName.Trim().ToLower())
 {
     case "millennium falcon":
-        Console.WriteLine("The Millennium Falcon is a Corellian YT-1300 light freighter.");
+        Console.WriteLine("Millennium Falcon.");
         break;
     case "x-wing":
     case "y-wing":
@@ -21,7 +21,7 @@ switch (shipName.Trim().ToLower())
         Console.WriteLine($"{shipName} is an Imperial starfighter.");
         break;
     case "star destroyer":
-        Console.WriteLine("The Star Destroyer is a class of capital ships used by the Galactic Empire.");
+        Console.WriteLine("The Star Destroyer.");
         break;
     default:
         Console.WriteLine("Unknown ship.");
